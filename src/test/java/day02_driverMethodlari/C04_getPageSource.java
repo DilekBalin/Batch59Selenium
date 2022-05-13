@@ -10,6 +10,7 @@ public class C04_getPageSource {
         WebDriver driver=new ChromeDriver();
         driver.manage().window().maximize();
         driver.get("https://www.amazon.com");
+
         String sayfaKaynakKodlari= driver.getPageSource();
         System.out.println(sayfaKaynakKodlari);
         String arananKelime= "Gateway";
